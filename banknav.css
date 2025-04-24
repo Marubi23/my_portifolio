@@ -1,0 +1,110 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #003366; /* Bank blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    position: fixed; /* Fixed navbar */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar stays on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+/* Navbar links */
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: #005bb5; /* Darker blue for hover */
+    color: #ffffff;
+}
+
+/* Active page styling */
+.navbar a.active {
+    background-color: #ffcc00; /* Yellow active button */
+    color: #003366;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003366;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #00b51e;
+}
+
+/* Page content */
+.content {
+    padding: 100px 20px 20px; /* Add padding to prevent content from being hidden under the navbar */
+    text-align: center;
+    color: #333;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .navbar a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .dropdown-content {
+        position: relative;
+        min-width: 100%;
+    }
+}

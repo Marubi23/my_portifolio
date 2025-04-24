@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BANK IT!</title>
+  <link rel="stylesheet" href="bank.css" />
+  <style>
+    /* Sidebar styles can also be moved to a separate CSS file if desired */
+    #side-nav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 1000;
+    }
+
+    #side-nav a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    #side-nav a:hover {
+      background-color: #575757;
+    }
+
+    .main-content {
+      transition: margin-left 0.3s;
+      padding: 20px;
+    }
+
+    #closeBtn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .navb button {
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div id="side-nav">
+    <span id="closeBtn" onclick="closeNav()">×</span>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Accounts</a>
+    <a href="#">Transfers</a>
+    <a href="#">Support</a>
+    <a href="#">Login</a>
+    <a href="#">Sign Up</a>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navb">
+      <button onclick="openNav()">☰</button>
+    </div>
+    <!-- Dropdowns -->
+    <div class="dropdown">
+      <a href="#">Home</a>
+      <div class="dropdown-content">
+        <a href="#">Overview</a>
+        <a href="#">News</a>
+        <a href="#">Updates</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Services</a>
+      <div class="dropdown-content">
+        <a href="#">Bank Accounts</a>
+        <a href="#">Loans</a>
+        <a href="#">Investment</a>
+        <a href="#">Insurance</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Accounts</a>
+      <div class="dropdown-content">
+        <a href="#">Personal Accounts</a>
+        <a href="#">Business Accounts</a>
+        <a href="#">Credit Accounts</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Transfers</a>
+      <div class="dropdown-content">
+        <a href="#">Send Money</a>
+        <a href="#">Track Transfer</a>
+        <a href="#">International Transfers</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Support</a>
+      <div class="dropdown-content">
+        <a href="#">FAQs</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Live Chat</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Login</a>
+      <div class="dropdown-content">
+        <a href="#">Personal Login</a>
+        <a href="#">Business Login</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Sign Up</a>
+      <div class="dropdown-content">
+        <a href="#">Open Personal Account</a>
+        <a href="#">Open Business Account</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" class="main-content">
+    <!-- Hero Banner -->
+    <section class="hero">
+      <h1>Welcome to BANK IT!</h1>
+      <p>Your trusted partner for a secure financial future</p>
+      <a href="#" class="btn-primary">Open an Account</a>
+    </section>
+
+    <!-- Features Section -->
+<section class="features" aria-labelledby="features-heading">
+  <div class="container">
+    <h2 id="features-heading">Explore Our Accounts</h2>
+    <p class="features-intro">Choose the account that fits your lifestyle. Secure, smart, and simple banking—tailored just for you.</p>
+
+    <div class="features-grid">
+      <article class="feature-card" tabindex="0">
+        <div class="feature-icon">
+          <i class="fas fa-wallet"></i>
+        </div>
+        <h3>Checking Account</h3>
+        <p>No monthly fees, instant transfers, and 24/7 online access.</p>
+        <a href="#" class="feature-link">Learn More →</a>
+      </article>
+
+      <article class="feature-card" tabindex="0">
+        <div class="feature-icon">
+          <i class="fas fa-piggy-bank"></i>
+        </div>
+        <h3>Savings Account</h3>
+        <p>Grow your money with competitive rates and zero hidden fees.</p>
+        <a href="#" class="feature-link">Start Saving →</a>
+      </article>
+
+      <article class="feature-card" tabindex="0">
+        <div class="feature-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3>Business Account</h3>
+        <p>Streamlined solutions for entrepreneurs and large-scale businesses.</p>
+        <a href="#" class="feature-link">Explore Business →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Loan Offers -->
+    <section class="loans" aria-labelledby="loan-heading">
+      <div class="container">
+        <h2 id="loan-heading">Need a Loan?</h2>
+        <p class="section-subtext">Flexible financing for your biggest moments. Choose the loan that works for your life.</p>
+    
+        <div class="loans-grid">
+          <article class="loan-card" tabindex="0">
+            <div class="loan-icon"><i class="fas fa-house"></i></div>
+            <h3>Home Loans</h3>
+            <p>Low interest, long-term options for your dream home. Secure and stable solutions for homeowners.</p>
+            <a href="#" class="loan-link">Explore Home Loans →</a>
+          </article>
+    
+          <article class="loan-card" tabindex="0">
+            <div class="loan-icon"><i class="fas fa-car-side"></i></div>
+            <h3>Auto Loans</h3>
+            <p>Drive your dream today with fast approvals and flexible payment options.</p>
+            <a href="#" class="loan-link">View Auto Options →</a>
+          </article>
+    
+          <article class="loan-card" tabindex="0">
+            <div class="loan-icon"><i class="fas fa-hand-holding-usd"></i></div>
+            <h3>Personal Loans</h3>
+            <p>Instant funding for education, travel, or emergencies — whenever you need it.</p>
+            <a href="#" class="loan-link">Get a Personal Loan →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading">What Our Customers Say</h2>
+    
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card">
+            <p>“Bank It made it so easy to buy my first home!”</p>
+            <footer>- <strong>Sarah M.</strong>, First-time Homebuyer</footer>
+          </blockquote>
+    
+          <blockquote class="testimonial-card">
+            <p>“Their customer service is amazing! I feel taken care of.”</p>
+            <footer>- <strong>James T.</strong>, Long-time Customer</footer>
+          </blockquote>
+    
+          <blockquote class="testimonial-card">
+            <p>“I switched my business account and never looked back.”</p>
+            <footer>- <strong>Olivia C.</strong>, Small Business Owner</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+        
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 BANK IT. All rights reserved.</p>
+      <p>Privacy Policy | Terms of Use | Contact</p>
+    </footer>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="sidebar.js"></script>
+
+</body>
+</html>
