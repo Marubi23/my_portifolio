@@ -809,3 +809,39 @@ header nav ul li a i {
     padding-top: 20px;
 
 }
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for mobile phones */
+  }
+  
+  /* Styles for mobile devices (phones, less than 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .header {
+        text-align: center;
+    }
+    .container {
+        padding: 20px;
+    }
+    .nav-bar {
+        display: block;
+    }
+}
+
+/* Styles for tablet devices (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .header {
+        text-align: center;
+    }
+    .container {
+        padding: 30px;
+    }
+}
