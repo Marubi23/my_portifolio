@@ -100,7 +100,6 @@ body {
 }
 
 .card {
-  background-image: url("images/");
   padding: 20px;
   border-radius: 10px;
   background-color: white;
@@ -182,8 +181,6 @@ body {
   text-decoration: underline;
 }
 
-
-/* Footer */
 footer {
   background-color: #004080;
   color: rgb(238, 255, 234);
