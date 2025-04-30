@@ -8,6 +8,7 @@ body{
 h1,h2{
     color: #2a9df4;
 }
+
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
@@ -22,7 +23,13 @@ section{
     padding: 20px;
 
 }
-header .header{
+.header h1{
+    text-align: center;
+    color: rgba(62, 28, 28, 0.366);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+
+}
     background-color: #775b5b;
     box-shadow: 0 2px 5px rgba(0, 0,0,0.1);
     padding: 20px;
