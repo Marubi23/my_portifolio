@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f7fa;
+    color: #220707;
+
+}
+h1,h2{
+    color: #2a9df4;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 20px;
+    padding: 20px;
+
+}
+section{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0,0,0.1);
+    padding: 20px;
+
+}
+header .header{
+    background-color: #775b5b;
+    box-shadow: 0 2px 5px rgba(0, 0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+.family .member-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+.family .member-card{
+    background-color: #f9fbfd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    transition: transform 0.3s;
+}
+.family .member-card :hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.family .member-card img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.family .member-card p{
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+.messages .message-list{
+    margin-top: 10px;
+
+}
+.messages .message-card{
+    background-color: #f9fbfd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+
+}
+.messages .message-card :hover{
+    background-color: #eef7ff;
+
+}
+
+.messages .message-card p span {
+    font-weight: bold;
+}
+.calender ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.calender ul li{
+    background-color: #f9fbfd;
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+.calender ul li :hover{
+    background-color: #eef7ff;
+
+}
+.tasks ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.tasks ul li{
+    background-color: #f9fbfd;
+    margin-bottom:8px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+
+}
+.tasks ul li :hover{
+    background-color: #eef7ff;
+
+}
+.tasks ul li ::before{
+    content: "\2713";
+    margin-right: 10px;
+    color: #2a9df4;
+
+}
+.photo-album .photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.photo-album .photos img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.photo-album .photos img :hover{
+    transform: scale(1.05);
+}
+@media (max-width:600px){
+    header .header h1{
+        font-size: 24px;
+    }
+}

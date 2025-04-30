@@ -1,0 +1,307 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial,  sans-serif;
+    color:white;
+    
+}
+header{
+    color: rgb(243, 236, 236);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 25px 0px;
+    background-color: hsl(207, 99%, 37%);
+    font-size: 50px;
+    font-weight: bold;
+
+
+}
+.cont-main{
+   background-color: rgb(196, 200, 196);
+
+}
+.nav-elements{
+    display: flex;
+    gap: 100px;
+    margin: 30px;
+    cursor: pointer;
+    height: 60px;
+    color:black;
+    padding-top: 30px;
+}
+.dropdown-content{
+    height: 400px;
+    width: 300px;
+    background: linear-gradient(hsl(145, 98%, 44%),hsl(61, 76%, 23%));
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content h1{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 20px;
+}
+.dropdown-content button{
+    margin: 60px;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    color:white;
+    box-shadow: 20px;
+}
+#felo{
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    margin-top: 00px;
+}
+#gram{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+
+}
+a{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button{
+    background-color: rgb(111, 119, 113);
+    display: flex;
+    color: white;
+    padding: 10px 15px;
+    margin: 50px;
+    border-radius: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.dropdown-online{
+    height: 300px;
+    width: 300px;
+   background-color: hsl(240, 58%, 55%);
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none;
+    padding-top: 10px;
+}
+.dropdown:hover .dropdown-online{
+    display: block;
+}
+.dropdown-text{
+    height: 300px;
+    width: 300px;
+    background-color: hsl(240, 58%, 55%);
+   background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none;
+    padding-top: 10px;
+}
+.dropdown:hover .dropdown-text{
+    display: block;
+}
+
+#display{
+    color: white;
+    font-size: 1.3rem;
+    margin: 50px;
+    
+}
+.btno {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .messo{
+    margin: 50px;
+    padding: 42px 20px;
+    border-radius: 5px;
+
+
+  }
+  
+  #send-btn{
+    background-color: hsl(120, 97%, 26%);
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+.container-online{
+    text-align: center;
+
+}
+#members{
+    display: grid;
+    grid-template-columns: 1 fr 1 fr;
+    gap: 20px;
+
+}
+.member{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+.member button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color:#008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: 5px;
+
+}
+.member button :hover{
+    background-color: #005f73;
+
+}
+.status{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d9534f;
+
+}
+.status online{
+    color: #5bc0de;
+}
+.member button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .member button:hover {
+    background-color: #0056b3;
+  }
+
+  .member .status {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .hero{
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url("fdcimages/art.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .heading h2{
+    color:white;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 30px;
+    animation: fadeIn 2.3s ease-out;
+  }
+.heading p{
+    color: rgb(93, 85, 85);
+    font-size: 3rem;
+    text-align: center;
+
+}
+.container h2{
+    color: rgb(66, 62, 62);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 2s ease;
+    
+}
+.options{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.options :hover{
+    transform: translateY(-8px);
+
+    
+}
+
+.options-card{
+    background:rgb(186, 182, 182);
+    border-radius:5px;
+    padding: 2rem;
+    animation: fadeIn 2s ease-in-out; 
+}
+
+.options-card h3,a{
+    color: rgb(38, 15, 21);
+    font-size: 1rem;
+}
+.options-card p{
+    color: black;
+    font-family: monospace;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.login-page{
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.member-photos{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    font-weight: bold;
+    background-color: #d9534f;
+    border-radius: 10px;
+}
+.check-member{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    font-weight: bold;
+    background-color: #d9534f;
+    border-radius: 10px;
+
+}
+.message-plat{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    font-weight: bold;
+    background-color: #d9534f;
+    border-radius: 10px;
+}
+article img{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
