@@ -82,12 +82,12 @@ body, html{
     width: 100%;
     padding: 15px;
     border: 1px solid #ccc;
-    background: white;
+    background:white;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    color: #555;
+    color:grey;
     font-weight: 600;
     border-radius: 10px;
     font-size: 1rem;
